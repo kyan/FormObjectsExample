@@ -4,9 +4,11 @@ class ContactForm < FormObjectBase
   attr_accessor :your_name, :your_email, :message
 
   validates :your_name, :your_email, :message, presence: true
+  validates :your_email, format: { with: /@/ }
 
   def send_enquiry?
-    return false
+    return false unless valid?
+    ContactUsMailer.send_enquiry(self).deliver
   end
 
   def column_for_attribute(attribute)

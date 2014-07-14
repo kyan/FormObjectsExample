@@ -6,7 +6,7 @@ class ContactUsController < ApplicationController
   def send_enquiry
     @contact_form = ContactForm.new_with_defaults contact_form_params
 
-    return redirect_to :thank_you if @contact_form.send_enquiry?
+    return redirect_to action: :thank_you if @contact_form.send_enquiry?
     render :index
   end
 
