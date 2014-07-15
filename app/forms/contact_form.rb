@@ -1,10 +1,10 @@
 class ContactForm < FormObjectBase
   include ActiveModel::Model
 
-  attr_accessor :your_name, :your_email, :message
+  attr_accessor :name, :email, :message
 
-  validates :your_name, :your_email, :message, presence: true
-  validates :your_email, format: { with: /@/ }
+  validates :name, :email, :message, presence: true
+  validates :email, format: { with: /@/ }
 
   def send_enquiry?
     return false unless valid?
@@ -13,7 +13,7 @@ class ContactForm < FormObjectBase
 
   def column_for_attribute(attribute)
     column_type, limit = case attribute.to_sym
-      when :your_name, :your_email then [:string]
+      when :name, :email then [:string]
       when :message   then [:text]
     end
     Column.new(attribute, column_type, limit)

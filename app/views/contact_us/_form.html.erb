@@ -1,8 +1,8 @@
 <%= simple_form_for [@contact_form], url: contact_us_path do |f| %>
   <%= f.error_notification %>
   
-  <%= f.input :your_name  %>
-  <%= f.input :your_email  %>
+  <%= f.input :name  %>
+  <%= f.input :email  %>
   <%= f.input :message  %>
   <%= f.submit %>
 <% end %>
