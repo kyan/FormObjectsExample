@@ -4,10 +4,10 @@ A quick example of how to use form objects for a contact form.
 
 ## Key files
 
-* app/forms/contact_form.rb - The actual form object
-* config/locales/en.yml - Locals of the form object
-* app/controllers/contact_us_controller.rb - Controller stiching the form object and view together.
-* app/views/contact_us/_form.html.erb - Simple Form implementation of the form.
+* [app/forms/contact_form.rb](https://github.com/kyan/FormObjectsExample/blob/master/app/forms/contact_form.rb) - The actual form object
+* [config/locales/en.yml](https://github.com/kyan/FormObjectsExample/blob/master/config/locales/en.yml) - Locals of the form object
+* [app/controllers/contact_us_controller.rb](https://github.com/kyan/FormObjectsExample/blob/master/app/controllers/contact_us_controller.rb) - Controller stiching the form object and view together.
+* [app/views/contact_us/_form.html.erb](https://github.com/kyan/FormObjectsExample/blob/master/app/views/contact_us/_form.html.erb) - Simple Form implementation of the form.
 
 ## Take it for a spin
 
