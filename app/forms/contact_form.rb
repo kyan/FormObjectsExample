@@ -11,17 +11,17 @@ class ContactForm
     ContactUsMailer.send_enquiry(self).deliver
   end
 
+  def self.new_with_defaults attributes={}
+    default_attributes = {}
+    new default_attributes.merge(attributes)
+  end
+  
   def column_for_attribute(attribute)
     column_type, limit = case attribute.to_sym
       when :name, :email then [:string]
       when :message   then [:text]
     end
     Column.new(attribute, column_type, limit)
-  end
-
-  def self.new_with_defaults attributes={}
-    default_attributes = {}
-    new default_attributes.merge(attributes)
   end
 
   # From https://github.com/plataformatec/simple_form/blob/master/test/support/models.rb#L3-L8
