@@ -13,7 +13,7 @@ A quick example of how to use form objects for a contact form.
 
 Clone this repo, download the gems then turn on the server:
 
- git clone git@github.com:kyan/FormObjectsExample.git
- cd FormObjectsExample
- bundle
- spring rails s
+    git clone git@github.com:kyan/FormObjectsExample.git
+    cd FormObjectsExample
+    bundle
+    spring rails s
