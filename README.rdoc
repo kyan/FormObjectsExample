@@ -1,28 +1,10 @@
-== README
+== Form Objects Example
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A quick example of how to use form objects for a contact form.
 
-Things you may want to cover:
+=== Files you need to worry about
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+ * app/forms/contact_form.rb - The actual form object
+ * config/locales/en.yml - Locals of the form object
+ * app/controllers/contact_us_controller.rb - Controller stiching the form object and view together.
+ * app/views/contact_us/_form.html.erb - Simple Form implementation of the form.
