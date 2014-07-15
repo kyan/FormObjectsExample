@@ -1,4 +1,4 @@
-# Form Objects example
+# Form Objects Example
 
 A quick example of how to use form objects for a contact form.
 
