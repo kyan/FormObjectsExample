@@ -7,7 +7,7 @@ class ContactForm
   validates :name, :email, :message, presence: true
   validates :email, format: { with: /@/ }
 
-  def send_enquiry?
+  def save_enquiry?
     return false unless valid?
     ContactUsMailer.send_enquiry(self).deliver
   end
