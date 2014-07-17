@@ -21,7 +21,7 @@ class ContactForm
   # Defines the column types for simple form.
   def column_for_attribute(attribute)
     column_type, limit = case attribute.to_sym
-      when :name, :email then [:string]
+      when :nick_name, :name, :email then [:string]
       when :message   then [:text]
     end
     Column.new(attribute, column_type, limit)
