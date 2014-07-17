@@ -17,7 +17,7 @@ class ContactForm
     new default_attributes.merge(attributes)
   end
   
-  # From https://github.com/plataformatec/simple_form/blob/19cb6635186eac9ea9188d988172b6cb3c884cb2/test/support/models.rb
+  # From https://github.com/plataformatec/simple_form/blob/19cb6635186eac9ea9188d988172b6cb3c884cb2/test/support/models.rb#L111-L131
   # Defines the column types for simple form.
   def column_for_attribute(attribute)
     column_type, limit = case attribute.to_sym
