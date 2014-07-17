@@ -1,8 +1,9 @@
 class ContactForm 
   include ActiveModel::Model
 
-  attr_accessor :name, :email, :message
+  attr_accessor :nick_name, :name, :email, :message
 
+  validates :nick_name, inclusion: ['']
   validates :name, :email, :message, presence: true
   validates :email, format: { with: /@/ }
 

@@ -1,6 +1,9 @@
 <%= simple_form_for [@contact_form], url: contact_us_path do |f| %>
   <%= f.error_notification %>
   
+  <div class="nick_name_field">
+    <%= f.input :nick_name  %>
+  </div>
   <%= f.input :name  %>
   <%= f.input :email  %>
   <%= f.input :message  %>
