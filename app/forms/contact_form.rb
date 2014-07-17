@@ -25,7 +25,7 @@ class ContactForm
     Column.new(attribute, column_type, limit)
   end
 
-  # From https://github.com/plataformatec/simple_form/blob/master/test/support/models.rb#L3-L8
+  # From https://github.com/plataformatec/simple_form/blob/ed3de1c2b566a962697529e824953f6b280e2867/test/support/models.rb#L3-L8
   # Allows SimpleForm to pick suitable input types.
   Column = Struct.new(:name, :type, :limit) do
     # Returns +true+ if the column is either of type integer, float or decimal.
